@@ -16,11 +16,11 @@ gulp.task('sass', function () {
     .pipe(autoprefixer({
       cascade: false
     }))
-    .pipe(concatCss('./dist/css/index.css'))
-    .pipe(gulp.dest('./'))
-    .pipe(concatCss('./dist/css/index.min.css'))
+    .pipe(concatCss('css/index.css'))
+    .pipe(gulp.dest('dist'))
+    .pipe(concatCss('css/index.min.css'))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('dist'));
 });
 
 //删除生成的
