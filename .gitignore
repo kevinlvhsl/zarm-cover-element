@@ -1,0 +1,4 @@
+node_modules
+.idea
+report_*.xml
+.DS_Store

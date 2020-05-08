@@ -1,0 +1,28 @@
+// table
+
+.el-table {
+  .el-table__header th {
+    background-color: #F2F2F2;
+    font-weight: 500;
+    color: $titleColor;
+  }
+}
+
+.el-pagination {
+  .el-pager .number {
+    color: #616161;
+  }
+  &.is-background {
+    .el-pager .number,
+    .btn-prev,
+    .btn-next {
+      background: #FAFAFA;
+      color: #616161;
+    }
+    .el-pagination__jump .el-input__inner,
+    .el-pagination__sizes .el-input__inner {
+      border: none;
+      background: #FAFAFA !important;
+    }
+  }
+}

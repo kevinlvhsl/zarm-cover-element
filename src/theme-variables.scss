@@ -1,0 +1,29 @@
+/* scss全局变量，其他文件都可以直接访问 */
+
+// 主题颜色
+$theme: #00BC70; // 主题颜色
+$success: #00BC70; // 成功
+$warning: #EC9131; // 警告
+$error: #FF5050; // 错误
+
+
+// 常用系列颜色
+$titleColor: #343434; // 标题、输入框、表头
+$textColor: #616161; // 正文（表格数据）表格中的文字颜色
+$borderColor: #DCDCDC; // 边框、分隔线
+$labelColor: $textColor; // label文字颜色
+$disabledColor: #909090; // disabled 颜色
+$placeholderColor: #BCBCBC; // placeholder 文字
+$bgColor: #FAFAFA; // 背景色
+
+
+// hover、激活时的明度
+$hover: rgba(0, 188, 112, 0.8);
+$active: hsl(156, 100%, 32.9%);
+$hoverBgColor: colorness($theme, 0.06);
+
+
+// 取颜色的透明度
+@function colorness($color, $op: 1) {
+  @return rgba(red($color), green($color), blue($color), $op)
+}

@@ -1,0 +1,35 @@
+
+$hoverbg: colorness($theme, 0.06);
+// 下拉框 选中时的样式
+.el-select-dropdown__item.selected {
+  font-weight: normal;
+  background-color: $theme;
+  color: #fff;
+}
+.el-select-dropdown__item:hover {
+  color: $theme;
+  background-color: $hoverbg;
+}
+.el-select-dropdown__item.is-disabled:hover {
+  color: $textColor;
+  background-color: #F2F2F2;
+}
+
+// 多选下拉框样式覆盖
+.el-select .el-tag {
+  // background-color: $hoverbg;
+  color: $titleColor;
+}
+
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+  font-weight: normal;
+  background-color: $theme;
+  color: #fff;
+}
+
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected:hover,
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover,
+.el-select-dropdown__item.selected:hover {
+  color: $theme;
+  background-color: $hoverbg;
+}

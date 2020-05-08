@@ -1,0 +1,10 @@
+.el-popper {
+    padding: 16px 12px 12px 16px;
+    .el-popconfirm .el-popconfirm__action {
+        width: 100%;
+        text-align: right;
+        .el-button + .el-button {
+            margin-left: 8px;
+        }
+    }
+}
