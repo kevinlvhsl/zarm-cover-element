@@ -1,5 +1,5 @@
 {
-  "name": "@za/zarm-cover-element",
+  "name": "zarm-cover-element",
   "version": "0.0.2",
   "description": "将element-ui样式2.1x.x 改写为zarm-web风格",
   "main": "dist/css/index.css",
