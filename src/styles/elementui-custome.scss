@@ -1,0 +1,50 @@
+// 当前项目自定义覆盖 element-ui styles（非默认覆盖。而是某些特定情况下需要改变）
+
+// 登录页输入框样式
+.login-input {
+    .el-input__inner {
+      text-indent: 18px;
+      background-color: $theme-light;
+    }
+    .el-form-item.is-success .el-input__inner {
+      border-color: #DCDFE6 !important;
+    }
+}
+
+// 搜索表单页面form覆盖
+.filter-form .el-row .el-col {
+  .el-form-item {
+    position: relative;
+    .el-form-item__label {
+      // position: absolute;
+      // left: 0;
+      width: 96px;
+      z-index: 10;
+    }
+    .el-form-item__content {
+      width: calc(100% - 96px);
+      // .el-select,
+      .el-date-editor,
+      .el-input__inner,
+      .el-range-editor--daterange {
+        // margin-left: 96px;
+        width: 100%;
+      }
+      .el-select {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        .el-input {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+

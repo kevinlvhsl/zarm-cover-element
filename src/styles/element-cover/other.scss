@@ -1,0 +1,59 @@
+// 下拉空箭头改成实心箭头
+.el-icon-arrow-down:before {
+  content: '\e790';
+  font-size: 16px;
+}
+// input的前缀下拉
+.el-input__suffix .el-input__suffix-inner .el-select__caret::before,
+// 数字input的加减 箭头
+.el-input-number .el-icon-arrow-up::before {
+  content: '\e78f';
+}
+
+// collapse
+.el-collapse-item__arrow.el-icon-arrow-right::before {
+  content: '\e791';
+}
+// 下拉框选项离框的距离
+.el-popper[x-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+// 表单label颜色
+.el-form-item .el-form-item__label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+// 面包屑-文字不加粗
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+    font-weight: 400 !important;
+}
+// 菜单
+.el-menu,
+.el-menu--popup {
+  .el-menu-item:hover {
+    color: $theme !important;
+    background-color: colorness($theme, 0.06);
+  }
+  .el-menu-item.is-active {
+    color: $theme;
+    background-color: colorness($theme, 0.06);
+  }
+  &.el-menu--horizontal {
+    .el-menu-item.is-active {
+      color: $theme;
+      background-color: transparent;
+    }
+  }
+}
+
+
+// 日期选择
+
+.el-date-picker {
+  .el-date-table td.in-range div {
+    background-color: colorness($theme, 0.06);
+  }
+}

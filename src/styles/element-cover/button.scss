@@ -1,0 +1,11 @@
+// button
+.el-button {
+  &.el-button--default {
+    border-color: #E6E6E6;
+    color: #464646;
+  }
+  &.is-disabled {
+    border-color: #E6E6E6;
+    color: #909090;
+  }
+}

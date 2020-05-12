@@ -31355,6 +31355,7 @@
 .el-pagination.is-background .btn-prev,
 .el-pagination.is-background .btn-next {
   background: #FAFAFA;
+  color: #616161;
 }
 
 .el-pagination.is-background .el-pagination__jump .el-input__inner,

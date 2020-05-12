@@ -1,0 +1,14 @@
+// 为统一靠向zarm-web风格，对element-ui默认样式修改
+
+@import './notice.scss'; // 通知类组件样式
+@import './button.scss';
+@import './dialog.scss'; // 弹框类组件样式(对话框、模态框，抽屉等)
+@import './dropdown.scss';
+@import './form.scss';
+@import './input.scss';
+@import './select.scss';
+@import './steps.scss';
+@import './table.scss';
+@import './upload.scss';
+@import './other.scss';
+@import './popper.scss';

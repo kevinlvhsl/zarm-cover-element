@@ -11,7 +11,7 @@ var del = require('del');
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
-  return gulp.src('./src/elementui.scss')
+  return gulp.src('./src/styles/elementui.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       cascade: false
@@ -28,8 +28,8 @@ gulp.task('clean', () => {
     del(['dist']);
 });
 gulp.task('copy', () => {
-  gulp.src('./src/theme/fonts/*')
-  .pipe(copy('./dist', { prefix: 1 }))
+  gulp.src('./src/styles/theme/fonts/*')
+  .pipe(copy('./dist', { prefix: 2 }))
   // .pipe(gulp.dest('./dist/fonts'))
 });
 // //Gulp plugin
