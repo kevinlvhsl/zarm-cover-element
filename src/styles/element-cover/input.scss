@@ -1,6 +1,4 @@
 // input
-
-
 .el-input {
   .el-input__inner {
     // border-width: 1px;
@@ -39,15 +37,23 @@
       min-width: 70px;
     }
   }
-
 }
-//
+
+
+// 文本域
 .el-textarea {
+  .el-textarea__inner {
+    border: 0;
+    background-color: #FAFAFA;
+  }
+  .el-date-editor.el-input__inner {
+    border: 0;
+  }
+
   textarea:focus + .el-input__count {
     color: #616161;
   }
 }
-
 
 
 // input-number

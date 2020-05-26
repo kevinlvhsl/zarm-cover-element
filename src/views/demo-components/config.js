@@ -14,7 +14,7 @@ export default [
   { status: '2', owner: 'kevin', name: 'InputNumber 计数器' },
   { status: '1', owner: 'kevin', name: 'Select 选择器' },
   { status: '3', owner: '', name: 'Cascader 级联选择器' },
-  { status: '0', owner: '', name: 'Switch 开关' },
+  { status: '2', owner: '', name: 'Switch 开关' },
   { status: '0', owner: '', name: 'Slider 滑块' },
   { status: '0', owner: '', name: 'TimePicker 时间选择器' },
   { status: '0', owner: '', name: 'DatePicker 日期选择器' },

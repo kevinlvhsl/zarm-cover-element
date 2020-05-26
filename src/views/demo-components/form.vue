@@ -238,6 +238,40 @@
           clearable
         ></el-cascader>
       </el-collapse-item>
+      <el-collapse-item title="Switch-开关" name="7">
+        <div>禁用
+          <el-switch
+            v-model="switch1"
+            disabled>
+          </el-switch>
+          <el-switch
+            v-model="switch2"
+            disabled>
+          </el-switch>
+        </div>
+        <div>普通用法
+          <el-switch
+            v-model="switch1"
+            size="small"
+          ></el-switch>
+          设置颜色
+          <el-switch
+            v-model="switch1"
+            active-color="#13ce66"
+            inactive-color="#ff4949"
+          >
+          </el-switch>
+          <el-switch
+            style="display: block"
+            v-model="switch2"
+            active-color="#13ce66"
+            inactive-color="#ff4949"
+            active-text="按月付费"
+            inactive-text="按年付费"
+          >
+          </el-switch>
+        </div>
+      </el-collapse-item>
     </el-collapse>
   </div>
 </template>
@@ -261,6 +295,8 @@ export default {
       radio2: '',
       radio20: '', // 单选框按钮组
       date4: '',
+      switch1: true,
+      switch2: false,
       checkList: [],
       checkboxGroup: ['上海'],
       checkboxGroup4: ['上海'],

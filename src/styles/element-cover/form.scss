@@ -17,6 +17,13 @@
         padding-top: 4px;
       }
     }
+    .el-textarea .el-textarea__inner {
+      border: 0;
+      background-color: #FAFAFA;
+    }
+    .el-date-editor.el-input__inner {
+      border: 0;
+    }
   }
 }
 
@@ -31,4 +38,23 @@
       background-color: $theme;
     }
   }
+}
+
+.el-switch {
+  .el-switch__core {
+    height: 20px;
+    border: none;
+    &:after {
+      top: 3px;
+      left: 3px;
+      height: 14px;
+      width: 14px;
+    }
+  }
+  // &.is-disabled .el-switch__core {
+  //   background-color: rgba(188, 188, 188, .5);
+  // }
+  // &.is-checked.is-disabled .el-switch__core {
+  //   background-color: colorness($theme, 0.5);
+  // }
 }

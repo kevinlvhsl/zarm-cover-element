@@ -6,6 +6,7 @@
           <el-col :span="24">
             <el-table
               highlight-current-row
+              stripe
               :data="tableData"
               :default-sort="{prop: 'date', order: 'descending'}"
               style="width: 100%"
